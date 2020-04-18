@@ -7,7 +7,12 @@ import {
   Button
 } from 'element-ui'
 
+import {
+  Switch
+} from 'ant-design-vue';
+
 Vue.use(Button)
+Vue.use(Switch)
 
 Vue.config.productionTip = false
 

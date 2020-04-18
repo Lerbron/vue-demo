@@ -7,6 +7,7 @@
     <el-button @click="add(2)" type="success">+2</el-button>
     <el-button @click="goAbout" type="success">To About</el-button>
     <span>{{num}}</span>
+    <a-switch defaultChecked @change="onChange" />
   </div>
 </template>
 
@@ -33,6 +34,9 @@ export default {
     },
     goAbout() {
       this.$router.push("/about");
+    },
+    onChange(checked) {
+      console.log(`a-switch to ${checked}`);
     },
     ...mapActions("test", ["add"])
   }
