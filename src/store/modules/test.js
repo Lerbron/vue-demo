@@ -1,5 +1,3 @@
-const TEST = "TEST"
-
 const state = {
   num: 0
 }
