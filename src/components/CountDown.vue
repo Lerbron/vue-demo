@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import "./countDown.scss";
 export default {
   name: "CountDown",
   props: {
